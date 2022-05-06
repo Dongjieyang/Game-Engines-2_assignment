@@ -19,6 +19,8 @@ public class StateMachine : MonoBehaviour {
     private IEnumerator coroutine;
     
     public int updatesPerSecond = 5;
+
+    public Transform pointA;
 	// Use this for initialization
 	void Start () {
         
