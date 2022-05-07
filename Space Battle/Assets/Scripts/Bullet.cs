@@ -5,18 +5,19 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20;
-    public int enemyCountdown = 5;
+    public GameObject Explosion;
+
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "enemy")
         {
-            Destroy(other.gameObject);
-            enemyCountdown--;
+            Explosion.gameObject.SetActive(true);
+
         }
     }
     void Start()
     {
-        Destroy(this.gameObject, 5);
+       
     }
 
     void Update()

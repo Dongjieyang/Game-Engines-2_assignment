@@ -6,8 +6,7 @@ public class MotherShipControl : MonoBehaviour
 {
     public GameObject Bullet;
     public GameObject Enemy;
-    public GameObject Laser;
-    public Transform Star;
+    public GameObject laser;
     void Start()
     {
         GetComponent<StateMachine>().ChangeState(new PursueState());

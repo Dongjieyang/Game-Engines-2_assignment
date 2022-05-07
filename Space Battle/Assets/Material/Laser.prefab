@@ -127,4 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cfa0f886efb540499926bce9390e773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  starSurface: {fileID: 1423097782728613631, guid: 29b1da373cf85b54480dcd27fd066062, type: 3}
+  starCorona: {fileID: 7054197754202448565, guid: d4dca60e80823d14eb5e06e71057c502, type: 3}
+  starLoops: {fileID: 7896895612724498466, guid: b33eea9b63ffcd6488781496d10f053a, type: 3}
   speed: 20

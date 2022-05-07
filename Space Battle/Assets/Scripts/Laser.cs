@@ -10,7 +10,7 @@ public class Laser : MonoBehaviour
   
     public void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Satr")
+        if (other.tag == "Star")
         {
           starSurface .gameObject.SetActive(true);
           starCorona.gameObject.SetActive(true);
@@ -20,7 +20,7 @@ public class Laser : MonoBehaviour
     }
     void Start()
     {
-        Destroy(this.gameObject, 20);
+        
     }
 
     void Update()
