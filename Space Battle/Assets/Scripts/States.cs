@@ -159,36 +159,18 @@ class AbsorbState : State
 
         if (Vector3.Distance(owner.GetComponent<EnemyMotherShipControl>().bullet.transform.position,
 
-          owner.transform.position) < -5)
+          owner.transform.position) <= 2)
         {
-            owner.ChangeState(new StopAbsorbState());
+            owner.GetComponent<Rotate1>().rotSpeed  -= 150;
+
         }
     }
     public override void Exit()
     {
-        owner.GetComponent<Rotate1>().enabled = false;
+       
 
     }
 }
-
-
-
-class StopAbsorbState : State
-{
-    public override void Enter()
-    {
-        owner.GetComponent<Rotate1>().enabled = false;
-
-    }
-}
-
-
-
-
-
-
-
-
 
 
 

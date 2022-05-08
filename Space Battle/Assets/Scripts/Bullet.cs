@@ -6,12 +6,16 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20;
     public GameObject Explosion;
-
+    public GameObject absorb;
+    public AudioClip explosionSound;
+    public AudioSource audioSource;
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "enemy")
         {
             Explosion.gameObject.SetActive(true);
+            audioSource.PlayOneShot(explosionSound);
+            absorb.gameObject.SetActive(false);
 
         }
     }
